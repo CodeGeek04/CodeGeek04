@@ -1,0 +1,43 @@
+.section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fadeIn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.title {
+  font-size: 3rem; /* Elegant font size */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin-top: 30px;
+  color: #ffffff; /* Sophisticated light grey color */
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* Subtle text shadow for depth */
+  transition: transform 0.3s ease;
+  transform: translateY(-5px);
+}
+
+.title:hover {
+  transform: translateY(
+    -2px
+  ); /* Gentle movement on hover for a dynamic touch */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Adding a decorative underline for sophistication */
+.title::after {
+  content: "";
+  display: block;
+  width: 70%;
+  height: 3px;
+  background-color: #a0a0a0;
+  margin: 10px auto 0;
+  transition: width 0.3s ease;
+}
+
+.title:hover::after {
+  width: 85%; /* Expanding underline on hover */
+}

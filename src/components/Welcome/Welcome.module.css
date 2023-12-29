@@ -1,0 +1,71 @@
+/* components/Welcome.module.css */
+
+.welcomeContainer {
+  /* position: fixed; */
+  bottom: 0;
+  left: 50%;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.button {
+  background: linear-gradient(45deg, #1456ad, #423c7d);
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.welcomeContent {
+  text-align: center;
+}
+
+.title {
+  font-size: 7rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  animation: fadeIn 0.8s ease-in-out;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.description {
+  font-size: 1.4rem;
+  font-family: "Courier New", Courier, monospace;
+  /* background: linear-gradient(
+    45deg,
+    #76e096,
+    #7ec04b
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; */
+}
+
+.description2 {
+  font-size: 2rem;
+  font-family: "Courier New", Courier, monospace;
+  /* background: linear-gradient(
+    45deg,
+    #76e096,
+    #7ec04b
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; */
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

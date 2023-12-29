@@ -1,0 +1,21 @@
+/* styles/Footer.module.css */
+
+.footer {
+  width: 100%;
+  background-color: #000000;
+  padding: 20px;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #ffffff; /* Adjust icon color as needed */
+  cursor: pointer;
+}
+
+/* Add additional styling as needed */
