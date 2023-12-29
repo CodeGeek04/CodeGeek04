@@ -6,7 +6,7 @@ import ParticlesConfig from "./particles-config";
 import styles from "../styles/Home.module.css";
 
 const ParticleBackground = () => {
-  const particlesInit = useCallback(async (engine) => {
+  const particlesInit = useCallback(async (engine: any) => {
     console.log(engine);
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
@@ -14,17 +14,17 @@ const ParticleBackground = () => {
     await loadFull(engine);
   }, []);
 
-  const particlesLoaded = useCallback(async (container) => {
+  const particlesLoaded = useCallback(async (container: any) => {
     await console.log(container);
   }, []);
   return (
     <div id="particle-background">
       <Particles
         id="tsparticles"
-        particlesLoaded="particlesLoaded"
+        // particlesLoaded="particlesLoaded"
         init={particlesInit}
         loaded={particlesLoaded}
-        options={ParticlesConfig}
+        // options={ParticlesConfig}
         height="100vh"
         width="100vw"
       ></Particles>

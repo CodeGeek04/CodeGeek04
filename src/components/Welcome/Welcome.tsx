@@ -19,11 +19,11 @@ const Welcome: React.FC = () => {
           AKA <span style={{ color: "#008000" }}>MR.ML</span>
         </h1>
         <p className={styles.description}>
-          I'm Shivam Mittal, an AI-driven Full Stack Developer specializing in
+          I amm Shivam Mittal, an AI-driven Full Stack Developer specializing in
           <span style={{ color: "#FF8C42" }}> ML Ops</span> and
           <span style={{ color: "#00BCD4" }}> DevOps</span>. With expertise in
           <span style={{ color: "#4CAF50" }}> Python</span> and the
-          <span style={{ color: "#00FFFF" }}> T3 stack</span>, I've led the
+          <span style={{ color: "#00FFFF" }}> T3 stack</span>, I have led the
           development of innovative applications, and collaborated with figures
           like Forbes 30 under 30,
           <span style={{ color: "#00FFFF" }}> Michael Gruen</span>. Beyond tech,
