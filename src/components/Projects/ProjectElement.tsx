@@ -1,6 +1,7 @@
 // components/ProjectElement.tsx
 import React from "react";
 import styles from "./ProjectElement.module.css"; // Adjust the path accordingly
+import Image from "next/image";
 
 interface ProjectElementProps {
   title: string;
@@ -18,7 +19,7 @@ const ProjectElement: React.FC<ProjectElementProps> = ({
   return (
     <div className={styles.projectContainer}>
       <div className={styles.projectImage}>
-        <img src={image} alt={`Tech for ${title}`} />
+        <Image src={image} alt={`Tech for ${title}`} />
         <div className={styles.projectTitleContainer}>
           <h3 className={styles.projectTitle}>{title}</h3>
           <a

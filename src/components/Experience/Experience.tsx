@@ -2,6 +2,7 @@
 
 import React from "react";
 import styles from "./Experience.module.css"; // Adjust the path accordingly
+import Image from "next/image";
 
 const Experience: React.FC = () => {
   return (
@@ -9,7 +10,7 @@ const Experience: React.FC = () => {
       <div className={styles.companyContainer}>
         <div className={styles.companyLogo}>
           {/* Add your company logo or an image */}
-          <img src="elysium-logo.png" alt="Elysium Logo" />
+          <Image src="elysium-logo.png" alt="Elysium Logo" />
         </div>
         <div className={styles.companyDetails}>
           <h3 className={styles.position}>Full Stack Developer</h3>
@@ -30,7 +31,7 @@ const Experience: React.FC = () => {
       <div className={styles.companyContainer}>
         <div className={styles.companyLogo}>
           {/* Add your company logo or an image */}
-          <img src="talko-logo.png" alt="TalkO Logo" />
+          <Image src="talko-logo.png" alt="TalkO Logo" />
         </div>
         <div className={styles.companyDetails}>
           <h3 className={styles.position}>CTO</h3>
