@@ -4,6 +4,7 @@ import Link from "next/link";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import styles from "./blogs.module.css"; // Import the styles
 
 interface Post {
   slug: string;
@@ -19,15 +20,22 @@ interface BlogIndexProps {
 
 const BlogIndex: React.FC<BlogIndexProps> = ({ posts }) => {
   return (
-    <div>
-      <h1>My Daily Blogs</h1>
-      <ul>
-        {posts.map((post) => (
-          <li key={post.slug}>
-            <Link href={`/blogs/${post.slug}`}>{post.data.title}</Link>
-          </li>
-        ))}
-      </ul>
+    <div className={styles.container}>
+      {posts.map((post) => (
+        <Link key={post.slug} href={`/blogs/${post.slug}`}>
+          <div className={styles.blog}>
+            <img
+              className={styles.image}
+              src={`/vscode.webp`}
+              alt={post.data.title}
+            />
+            <div className={styles.overlay}>
+              <div className={styles.title}>{post.data.title}</div>
+              <div className={styles.date}>{post.data.date}</div>
+            </div>
+          </div>
+        </Link>
+      ))}
     </div>
   );
 };
