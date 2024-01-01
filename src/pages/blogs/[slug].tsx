@@ -1,4 +1,4 @@
-// pages/blogs/[slug].tsx
+// src/pages/blogs/[slug].tsx
 
 import fs from "fs";
 import path from "path";
@@ -32,9 +32,11 @@ export async function getStaticPaths() {
   const blogPostsDirectory = path.join(process.cwd(), "src/pages/blogs");
   const fileNames = fs.readdirSync(blogPostsDirectory);
 
-  const paths = fileNames.map((fileName) => ({
-    params: { slug: fileName.replace(/\.md$/, "") },
-  }));
+  const paths = fileNames
+    .filter((fileName) => fileName.endsWith(".md"))
+    .map((fileName) => ({
+      params: { slug: fileName.replace(/\.md$/, "") },
+    }));
 
   return {
     paths,
