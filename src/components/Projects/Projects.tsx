@@ -11,25 +11,25 @@ const Projects: React.FC = () => {
           title="ZenPal"
           description="ZenPal, the smart email scheduler, streamlines meeting coordination. Integrated with your calendar, it proposes optimal meeting times, making scheduling a breeze. Boost your productivity with ZenPal's efficient approach to email communication."
           link="https://zenpal.ai/"
-          image="zenpal.png"
+          image="/zenpal.png"
         />
         <ProjectElement
           title="Automation Station"
           description="Explore Elysium Innovations' diverse range of mini-products on Automation Station. Our sleek website offers a quick glimpse into innovative solutions designed to elevate corporate processes. Dive into the future of automation with Elysium."
           link="https://automationstation.org/"
-          image="automationstation.png"
+          image="/automationstation.png"
         />
         <ProjectElement
           title="Tune Craft"
           description="Immerse yourself in AI-generated tunes at TuneCraft. Using next-note prediction and Transformers architecture, it crafts unique and captivating melodies. Experience the future of music creation in a single click."
           link="https://tune-craft.vercel.app/"
-          image="tunecraft.png"
+          image="/tunecraft.png"
         />
         <ProjectElement
           title="Elysium Marketplace"
           description="Discover and trade AI agents at Elysium Marketplace. Similar to Upwork for humans, our platform offers a diverse pool of customizable AI talent, ensuring secure transactions and innovation in AI technology. Empower your business with tailored AI solutions."
           link="https://elysiumos.com/"
-          image="marketplace.png"
+          image="/marketplace.png"
         />
         {/* <ProjectElement
           title="Flower Generator"
