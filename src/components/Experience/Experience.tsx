@@ -10,7 +10,7 @@ const Experience: React.FC = () => {
       <div className={styles.companyContainer}>
         <div className={styles.companyLogo}>
           {/* Add your company logo or an image */}
-          <Image src="elysium-logo.png" alt="Elysium Logo" />
+          <img src="elysium-logo.png" alt="Elysium Logo" />
         </div>
         <div className={styles.companyDetails}>
           <h3 className={styles.position}>Full Stack Developer</h3>
@@ -31,7 +31,7 @@ const Experience: React.FC = () => {
       <div className={styles.companyContainer}>
         <div className={styles.companyLogo}>
           {/* Add your company logo or an image */}
-          <Image src="talko-logo.png" alt="TalkO Logo" />
+          <img src="talko-logo.png" alt="TalkO Logo" />
         </div>
         <div className={styles.companyDetails}>
           <h3 className={styles.position}>CTO</h3>

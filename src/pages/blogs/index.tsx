@@ -11,6 +11,7 @@ interface Post {
   data: {
     title: string;
     date: string;
+    image: string;
   };
 }
 
@@ -20,22 +21,26 @@ interface BlogIndexProps {
 
 const BlogIndex: React.FC<BlogIndexProps> = ({ posts }) => {
   return (
-    <div className={styles.container}>
-      {posts.map((post) => (
-        <Link key={post.slug} href={`/blogs/${post.slug}`}>
-          <div className={styles.blog}>
-            <img
-              className={styles.image}
-              src={`/vscode.webp`}
-              alt={post.data.title}
-            />
-            <div className={styles.overlay}>
-              <div className={styles.title}>{post.data.title}</div>
-              <div className={styles.date}>{post.data.date}</div>
+    <div className={styles.pageContainer}>
+      <h1 className={styles.pageTitle}>BLOGS</h1>
+      <br />
+      <div className={styles.container}>
+        {posts.map((post) => (
+          <Link key={post.slug} href={`/blogs/${post.slug}`}>
+            <div className={styles.blog}>
+              <img
+                className={styles.image}
+                src={post.data.image}
+                alt={post.data.title}
+              />
+              <div className={styles.overlay}>
+                <div className={styles.title}>{post.data.title}</div>
+                <div className={styles.date}>{post.data.date}</div>
+              </div>
             </div>
-          </div>
-        </Link>
-      ))}
+          </Link>
+        ))}
+      </div>
     </div>
   );
 };
@@ -50,7 +55,7 @@ export async function getStaticProps() {
       const filePath = path.join(blogPostsDirectory, fileName);
       const fileContent = fs.readFileSync(filePath, "utf-8");
       const { data } = matter(fileContent) as unknown as {
-        data: { title: string; date: string };
+        data: { title: string; date: string; image: string };
       };
 
       return {

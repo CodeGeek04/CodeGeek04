@@ -1,9 +1,20 @@
-/* styles.module.css */
+/* blogs.module.css */
+
+.pageContainer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pageTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #dddddd;
+}
 
 .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .blog {
@@ -12,14 +23,17 @@
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
+  margin: 8px; /* Added margin to space out the blogs */
 }
 
 .blog:hover {
   transform: scale(1.05);
+  /* box-shadow: 0 8px 16px rgba(34, 255, 0, 0.612); */
 }
 
 .image {
-  width: 100%;
+  padding: 5px;
+  width: 200px;
   height: 200px;
   object-fit: cover;
   border-radius: 8px 8px 0 0;
@@ -35,16 +49,22 @@
   flex-direction: column;
   justify-content: flex-end;
   padding: 16px;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.8);
   color: #fff;
+}
+
+.overlay:hover {
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .title {
   font-size: 1.5rem;
   font-weight: bold;
+  color: #fff;
+  margin-bottom: 4px;
 }
 
 .date {
   font-size: 1rem;
-  margin-top: 8px;
+  color: #ddd;
 }

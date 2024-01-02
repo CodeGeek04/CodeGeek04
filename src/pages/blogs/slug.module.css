@@ -1,0 +1,75 @@
+/* src/pages/blogs/slug.module.css */
+
+.blogPostContainer {
+  max-width: 1000px; /* Adjusted maximum width */
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+  border-radius: 8px;
+  color: #fff;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: 400px; /* Adjusted height for better landscape view */
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+}
+
+.overlayText {
+  font-size: 2.5rem; /* Increased font size */
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  max-width: 90%; /* Adjusted maximum width */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.content {
+  line-height: 1.6;
+  text-align: left;
+  max-width: 100%; /* Allows content to expand horizontally */
+}
+
+.paragraph {
+  font-size: 1.5rem;
+  color: #eee;
+}
+
+.image2 {
+  max-width: 80%; /* Adjusted maximum width for landscape */
+  height: auto;
+  display: block;
+  margin: 20px auto; /* Centered the image */
+  border-radius: 8px;
+}

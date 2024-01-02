@@ -19,7 +19,7 @@ const ProjectElement: React.FC<ProjectElementProps> = ({
   return (
     <div className={styles.projectContainer}>
       <div className={styles.projectImage}>
-        <Image src={image} alt={`Tech for ${title}`} />
+        <img src={image} alt={`Tech for ${title}`} />
         <div className={styles.projectTitleContainer}>
           <h3 className={styles.projectTitle}>{title}</h3>
           <a
