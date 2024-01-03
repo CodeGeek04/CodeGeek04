@@ -1,40 +1,17 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CodeGeek04's Developer Hub 🚀
 
-## Getting Started
+Hey there! I'm **Shivam Mittal**, an AI-Driven Full Stack Developer passionate about crafting innovative solutions. You can catch me at +91 8851660028 or drop me an email at [shivammittal2124@gmail.com](mailto:shivammittal2124@gmail.com). Let's connect on [LinkedIn](https://www.linkedin.com/in/shivam-mittal-559752225/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BrWKAektiR1S01SRODjkQTQ%3D%3D) and explore my code on [GitHub](https://github.com/CodeGeek04).
 
-First, run the development server:
+## 🚀 Planning to Blog Every Day in 2024
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Embarking on a new journey to share my thoughts and experiences with you! 📝 My plan for this year is simple but ambitious - I want to write a blog post every single day. 🌟 Through this daily practice, I aim to not only improve my writing skills but also share valuable insights, knowledge, and maybe a touch of humor. Join me on this exciting adventure as we explore the vast realms of technology, development, and more.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌐 My Website
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+Check out my website at [shivammittal.in](https://shivammittal.in) for more content and updates!
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## 📈 Views Count
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+![Visitor Count](https://profile-counter.glitch.me/CodeGeek04/count.svg)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feel free to use this content for your README. Adjustments can be made based on your preferences.
