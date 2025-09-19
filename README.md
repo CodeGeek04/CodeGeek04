@@ -6,7 +6,4 @@ Hey there! I'm **Shivam Mittal**, an AI-Driven Full Stack Developer passionate a
 
 Check out my website at [shivammittal.in](https://shivammittal.in) for more content and updates!
 
-## 📈 Views Count
-
-![Visitor Count](https://profile-counter.glitch.me/CodeGeek04/count.svg)
 
